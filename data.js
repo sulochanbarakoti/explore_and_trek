@@ -1,12 +1,4 @@
-import {
-  chitwan,
-  kathmandu,
-  pokhara,
-  everest,
-  lumbini,
-  helicopter,
-  labuche,
-} from "./asset/logic";
+import images from "./src/assets/images";
 
 export const activities = [
   {
@@ -35,7 +27,7 @@ export const stories = [
     location: "Kathmandu",
     description:
       "The Kathmandu Valley is a cultural hub and home to several UNESCO World Heritage Sites, including Kathmandu Durbar Square, Patan Durbar Square, and Bhaktapur Durbar Square. Visitors can explore ancient temples, palaces, and bustling marketplaces, immersing themselves in the rich history and architecture of the region.",
-    image: kathmandu,
+    image: images.kathmandu,
     date: "2023-08-15",
   },
   {
@@ -45,7 +37,7 @@ export const stories = [
     location: "Solukhumbu District",
     description:
       "Mount Everest, the highest peak in the world, attracts adventurers and climbers from around the globe. While summiting Everest is a challenging feat reserved for experienced mountaineers, trekking to Everest Base Camp offers a memorable journey through the stunning Himalayan landscape.",
-    image: everest,
+    image: images.everest,
     date: "2023-09-20",
   },
   {
@@ -54,7 +46,7 @@ export const stories = [
     location: "Gandaki Province",
     description:
       "Pokhara is known for its breathtaking natural beauty, with stunning views of the Annapurna and Dhaulagiri mountain ranges reflected in the serene waters of Phewa Lake. Visitors can enjoy boating on the lake, exploring caves, and hiking to nearby viewpoints for panoramic vistas.",
-    image: pokhara,
+    image: images.pokhara,
     date: "2023-10-10",
   },
   {
@@ -64,7 +56,7 @@ export const stories = [
     location: "Chitwan District",
     description:
       "Chitwan National Park is a haven for wildlife enthusiasts, home to a diverse range of flora and fauna, including endangered species such as the Bengal tiger and one-horned rhinoceros. Visitors can enjoy jungle safaris, birdwatching, and cultural experiences with the indigenous Tharu community.",
-    image: chitwan,
+    image: images.chitwan,
     date: "2023-11-05",
   },
 ];
@@ -73,7 +65,7 @@ export const Trip = [
   {
     tripId: 1,
     tripName: "Buddhist Tour In Nepal",
-    image: lumbini,
+    image: images.chitwan,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -111,7 +103,7 @@ export const Trip = [
   {
     tripId: 2,
     tripName: "Everest Base Camp Helicopter tour",
-    image: helicopter,
+    image: images.helicopter,
     days: 1,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -149,7 +141,7 @@ export const Trip = [
   {
     tripId: 3,
     tripName: "Kathmandu and Pokhara Tour",
-    image: pokhara,
+    image: images.pokhara,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -187,7 +179,7 @@ export const Trip = [
   {
     tripId: 4,
     tripName: "Everest Base Camp Trek",
-    image: everest,
+    image: images.everest,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -225,7 +217,7 @@ export const Trip = [
   {
     tripId: 5,
     tripName: "Lobuche East Peak Climbing",
-    image: labuche,
+    image: images.labuche,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
@@ -263,7 +255,7 @@ export const Trip = [
   {
     tripId: 6,
     tripName: "Kanchenjunga Trek",
-    image: lumbini,
+    image: images.lumbini,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",

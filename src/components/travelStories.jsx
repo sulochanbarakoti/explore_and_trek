@@ -1,39 +1,42 @@
-import images from "../assets/images";
+import { ImLocation2 } from "react-icons/im";
+import { MdAccessTimeFilled } from "react-icons/md";
+import { Trip } from "../../data";
 
 const TravelStories = () => {
   return (
     <div className="space-y-2">
-      <div className="mx-10 md:mx-36 font-semibold">
-        Plan your trip to Nepal
-      </div>
       <div className="mx-10 md:mx-36 flex flex-row justify-between">
-        <div className="text-3xl font-bold">Where to next?</div>
-        <button className="border-2 p-2 rounded-md border-primary hover:bg-primary hover:text-white">
+        <div className="text-3xl font-bold">Best Trekking Deals</div>
+        <button className="border-2 px-2 md:px-6 rounded-md border-primary hover:bg-primary hover:text-white hidden md:block">
           More...
         </button>
       </div>
-      <div className="flex justify-end">
-        <div className="mx-10 md:mx-36 hidden md:block"></div>
-      </div>
-      <div className="flex flex-col md:flex-row justify-between mx-10 md:mx-36 space-y-5 md:space-y-0 space-x-0 md:space-x-10">
-        <div>
-          <div>
-            <img src={images.trekingHimalayan} alt="" className="rounded-lg" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between mx-10 md:mx-36 space-y-5 md:space-y-0">
+        {Trip.map((item, index) => (
+          <div
+            key={index}
+            className="border rounded-md shadow-lg hover:shadow-xl"
+          >
+            <div className="w-full h-60 overflow-hidden">
+              <img
+                src={item.image}
+                alt=""
+                className="rounded-t-md w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-2">
+              <div className="mt-5 flex flex-row items-center font-semibold space-x-2">
+                <ImLocation2 color="green" />
+                <div>Nepal</div>
+              </div>
+              <div className="font-bold">Himalayan Treking</div>
+              <div className="font-semibold text-gray-400 flex flex-row items-center space-x-2 mt-2">
+                <MdAccessTimeFilled />
+                <div>12 Days</div>
+              </div>
+            </div>
           </div>
-          <div>Himalayan Trek</div>
-        </div>
-        <div>
-          <div>
-            <img src={images.trekingCloud} alt="" className="rounded-lg" />
-          </div>
-          <div>Trekking above cloud</div>
-        </div>
-        <div>
-          <div>
-            <img src={images.elephantSafari} alt="" className="rounded-lg" />
-          </div>
-          <div>Elephant Safari in Chitwan</div>
-        </div>
+        ))}
       </div>
       <div className="flex justify-center">
         <div className="mx-10 md:mx-36 md:hidden">

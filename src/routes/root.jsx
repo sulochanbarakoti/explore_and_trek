@@ -1,9 +1,10 @@
 import ActivitySearch from "../components/activity_search";
 import BlogPosts from "../components/blogposts";
 import Card from "../components/card";
+import Feature from "../components/feature";
 import MainSlider from "../components/main_slider";
 import NextDestination from "../components/nextDestination";
-// import TravelStories from "../components/travelStories";
+import TravelStories from "../components/travelStories";
 
 const Root = () => {
   return (
@@ -19,6 +20,12 @@ const Root = () => {
       </div>
       <div>
         <NextDestination />
+      </div>
+      <div>
+        <Feature />
+      </div>
+      <div>
+        <TravelStories />
       </div>
       <div>
         <BlogPosts />
