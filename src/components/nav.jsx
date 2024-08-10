@@ -37,7 +37,7 @@ const Navbar = () => {
               <div className="text-white flex flex-row items-center space-x-2 font-semibold hover:text-gray-300 hover:underline">
                 <GiCycling />
                 <button>
-                  <a href="/projects">Activities</a>
+                  <a href="/activities">Activities</a>
                 </button>
               </div>
               <div className=" text-white font-semibold flex flex-row items-center space-x-2 hover:text-green-500">

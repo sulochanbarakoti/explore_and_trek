@@ -11,6 +11,7 @@ import pokhara from "./pokhera.jpg";
 import lumbini from "./lumbini.png";
 import helicopter from "./helicopter-tour.png";
 import labuche from "./labuche.png";
+import working from "./working.png";
 
 export default {
   trekingHimalayan,
@@ -26,4 +27,5 @@ export default {
   lumbini,
   helicopter,
   labuche,
+  working,
 };

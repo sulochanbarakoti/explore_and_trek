@@ -27,12 +27,12 @@ const TravelStories = () => {
             <div className="p-2">
               <div className="mt-5 flex flex-row items-center font-semibold space-x-2">
                 <ImLocation2 color="green" />
-                <div>Nepal</div>
+                <div>{item.tripDetails.arrivalCity}</div>
               </div>
-              <div className="font-bold">Himalayan Treking</div>
+              <div className="font-bold">{item.tripName}</div>
               <div className="font-semibold text-gray-400 flex flex-row items-center space-x-2 mt-2">
                 <MdAccessTimeFilled />
-                <div>12 Days</div>
+                <div>{item.days} Days</div>
               </div>
             </div>
           </div>

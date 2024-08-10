@@ -7,12 +7,11 @@ const Feature = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Make Your Dream Come True!!!
+              Summer styles are finally here
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              Explore the beautiful lands of Nepal with Adventurous, Thrilling,
-              and lifetime memorable trips followed by welcoming friendly
-              people, geographical and cultural diversity
+              This year, our new summer collection will shelter you from the
+              harsh elements of a world that care if you live or die.
             </p>
           </div>
           <div>
@@ -59,6 +58,22 @@ const Feature = () => {
                         <img
                           alt=""
                           src={images.helicopter}
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          alt=""
+                          src={images.chitwan}
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <img
+                          alt=""
+                          src={images.pokhara}
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
