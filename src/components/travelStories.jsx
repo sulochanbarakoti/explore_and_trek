@@ -1,6 +1,7 @@
 import { ImLocation2 } from "react-icons/im";
 import { MdAccessTimeFilled } from "react-icons/md";
 import { Trip } from "../../data";
+import { Link } from "react-router-dom";
 
 const TravelStories = () => {
   return (
@@ -29,7 +30,9 @@ const TravelStories = () => {
                 <ImLocation2 color="green" />
                 <div>{item.tripDetails.arrivalCity}</div>
               </div>
-              <div className="font-bold">{item.tripName}</div>
+              <div className="font-bold">
+                <Link to={`/post/${item.tripId}`}>{item.tripName}</Link>
+              </div>
               <div className="font-semibold text-gray-400 flex flex-row items-center space-x-2 mt-2">
                 <MdAccessTimeFilled />
                 <div>{item.days} Days</div>

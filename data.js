@@ -255,7 +255,7 @@ export const Trip = [
   {
     tripId: 6,
     tripName: "Kanchenjunga Trek",
-    image: images.lumbini,
+    image: images.lumbinitri,
     days: 8,
     tripDetails: {
       accomodation: "Hotel/Lodge",
