@@ -3,15 +3,15 @@ import { useState } from "react";
 const ActivitySearch = () => {
   const [dropDownValue, setDropDownValue] = useState("default");
   return (
-    <div className="bg-green-100 w-[80%] rounded-lg flex flex-col md:flex-row p-2 space-y-2 md:space-y-0 space-x-0 md:space-x-2">
-      <div className="w-full md:w-[50%]">
+    <div className="bg-green-100 w-[80%] rounded-lg grid grid-cols-1 gap-2 md:grid-cols-3 space-y-2 md:space-y-0 p-2">
+      <div className="w-full">
         <input
           type="text"
           placeholder="Search Activities"
           className="rounded-md w-full p-1"
         />
       </div>
-      <div className="w-full md:w-[25%]">
+      <div className="w-full">
         <select
           value={dropDownValue}
           onChange={(e) => setDropDownValue(e.target.value)}
@@ -21,7 +21,7 @@ const ActivitySearch = () => {
           <option value="two">two</option>
         </select>
       </div>
-      <div className="w-full md:w-[25%]">
+      <div className="w-full">
         <button className="bg-primary hover:bg-green-800 text-white w-full p-1 rounded-md font-semibold">
           Search
         </button>

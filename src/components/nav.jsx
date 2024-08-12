@@ -20,7 +20,7 @@ const Navbar = () => {
             <GiHiking size={25} />
             <div className="text-xl">Explore & Trek In Nepal</div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex flex-row space-x-10">
               <div className="text-white flex flex-row items-center space-x-2 font-semibold hover:text-gray-300 hover:underline">
                 <FaHome />
@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={toggleMenu} className="text-white">
               <div>
                 <LuMenuSquare size={24} />
@@ -54,7 +54,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className={`${openMenu ? "block" : "hidden"} md:hidden`}>
+        <div className={`${openMenu ? "block" : "hidden"} lg:hidden`}>
           <div className="flex flex-col space-y-2 mt-3">
             <div className="text-white flex flex-row items-center space-x-2 font-semibold hover:text-gray-300 hover:underline">
               <FaHome />
