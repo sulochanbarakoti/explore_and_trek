@@ -2,7 +2,6 @@ import ActivitySearch from "../components/activity_search";
 import BlogPosts from "../components/blogposts";
 import Card from "../components/card";
 import Feature from "../components/feature";
-import Footer from "../components/footer";
 import MainSlider from "../components/main_slider";
 import NextDestination from "../components/nextDestination";
 import TravelStories from "../components/travelStories";
@@ -30,9 +29,6 @@ const Root = () => {
       </div>
       <div>
         <BlogPosts />
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );

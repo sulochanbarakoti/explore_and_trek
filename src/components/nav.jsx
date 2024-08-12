@@ -63,20 +63,19 @@ const Navbar = () => {
               </button>
             </div>
             <div className="text-white flex flex-row items-center space-x-2 font-semibold hover:text-gray-300 hover:underline">
-              <FaUser />
+              <PiPlanetFill />
               <button>
-                <a href="/about">About</a>
+                <a href="/destination">Destination</a>
               </button>
             </div>
             <div className="text-white flex flex-row items-center space-x-2 font-semibold hover:text-gray-300 hover:underline">
-              <AiOutlineFundProjectionScreen />
+              <GiCycling />
               <button>
-                <a href="/projects">Projects</a>
+                <a href="/activities">Activities</a>
               </button>
             </div>
             <div className=" text-white font-bold flex flex-row items-center space-x-2">
-              <FaFilePdf />
-              <button>Download Resume</button>
+              <button>Contacts</button>
             </div>
           </div>
         </div>

@@ -14,23 +14,23 @@ const BlogPosts = () => {
       position: "Founder / Admin",
     },
     {
-      thumbnail: images.pokhara,
-      date: "Mar 16, 2024",
+      thumbnail: images.chitwan,
+      date: "Apr 10, 2024",
       category: "Explore City",
-      title: "Beautiful city of Pokhara",
+      title: "Wildlife Adventure in Chitwan",
       description:
-        "Pokhara is a city on Phewa Lake, in central Nepal. It’s known as a gateway to the Annapurna Circuit, a popular trail in the Himalayas. Tal Barahi Temple, a 2-story pagoda, sits on an island in the lake.",
+        "Chitwan National Park, located in south-central Nepal, is a UNESCO World Heritage Site renowned for its biodiversity. Experience the thrill of jungle safaris, witness majestic Bengal tigers, one-horned rhinoceros, and a myriad of bird species in their natural habitat.",
       logo: images.logo,
       author: "Sulochan Barakoti",
       position: "Founder / Admin",
     },
     {
-      thumbnail: images.pokhara,
-      date: "Mar 16, 2024",
-      category: "Explore City",
-      title: "Beautiful city of Pokhara",
+      thumbnail: images.helicopter,
+      date: "May 5, 2024",
+      category: "Adventure Experience",
+      title: "Helicopter Tour of the Himalayas",
       description:
-        "Pokhara is a city on Phewa Lake, in central Nepal. It’s known as a gateway to the Annapurna Circuit, a popular trail in the Himalayas. Tal Barahi Temple, a 2-story pagoda, sits on an island in the lake.",
+        "Embark on an exhilarating helicopter ride over the towering peaks of the Himalayas. Witness the grandeur of Mount Everest, Annapurna, and other iconic summits from a breathtaking vantage point. This unforgettable journey offers panoramic views that are both awe-inspiring and humbling.",
       logo: images.logo,
       author: "Sulochan Barakoti",
       position: "Founder / Admin",
@@ -38,8 +38,8 @@ const BlogPosts = () => {
   ];
 
   return (
-    <div className="bg-white mx-5 md:mx-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-white">
+      <div className="mx-10">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Our best blog posts
@@ -48,7 +48,7 @@ const BlogPosts = () => {
             Learn how to explore Nepal with our expert advice.
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-3">
           {blogsData.map((items, index) => (
             <article
               key={index}

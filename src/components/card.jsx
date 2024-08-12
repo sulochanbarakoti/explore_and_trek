@@ -4,7 +4,8 @@ import { BiTrip } from "react-icons/bi";
 
 const Card = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between mx-10 md:mx-36 space-y-5 md:space-y-0 space-x-0 md:space-x-32">
+    // <div className="flex flex-col md:flex-row justify-between mx-10 md:mx-36 space-y-5 md:space-y-0 space-x-0 md:space-x-32">
+    <div className="grid grid-cols-1 gap-5 md:grid-cols-3 mx-10 space-y-5 md:space-y-0 ">
       <div className="space-y-2 border-gray-300 border-2 rounded-md hover:shadow-2xl p-5">
         <div>
           <FaPlaneArrival size={34} color="green" />

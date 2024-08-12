@@ -7,6 +7,7 @@ import Navbar from "./components/nav";
 import Destination from "./routes/destination";
 import Activities from "./routes/activities";
 import PostDetails from "./routes/postDetails";
+import Footer from "./components/footer";
 
 const router = createBrowserRouter([
   { path: "/", element: <Root /> },
@@ -19,5 +20,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Navbar />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
