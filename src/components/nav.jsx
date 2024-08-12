@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { LuMenuSquare } from "react-icons/lu";
-import { FaHome, FaUser, FaFilePdf } from "react-icons/fa";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { FaHome } from "react-icons/fa";
 import { GiHiking } from "react-icons/gi";
 import { PiPlanetFill } from "react-icons/pi";
 import { GiCycling } from "react-icons/gi";
