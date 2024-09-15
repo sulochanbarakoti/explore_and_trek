@@ -120,11 +120,11 @@ const PostDetails = () => {
           alt={post.tripName}
           className="w-full h-96 object-cover rounded-lg shadow-lg transition-transform transform hover:scale-105"
         />
-        <div className="absolute bottom-5 left-5 bg-gray-900 bg-opacity-60 text-white p-2 rounded-lg shadow-md">
+        <div className="absolute bottom-5 left-5 bg-gray-900  text-white p-2 rounded-lg shadow-md">
           <span className="text-lg md:text-xl font-semibold">
             Starting at:{" "}
           </span>
-          <span className="text-2xl md:text-3xl font-bold">${post.price}</span>
+          <span className="text-2xl md:text-3xl font-bold">$80</span>
         </div>
       </div>
 
