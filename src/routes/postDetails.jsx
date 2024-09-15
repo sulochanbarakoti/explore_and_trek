@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { Trip } from "../../data";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PostDetails = () => {
   const { id } = useParams();
   const post = Trip.find((trip) => trip.tripId === parseInt(id));
+  const [activeTab, setActiveTab] = useState("itinerary"); // Default active tab
 
   // Scroll to the top whenever the component mounts or when `id` changes
   useEffect(() => {
@@ -159,38 +160,69 @@ const PostDetails = () => {
         </div>
       </div>
 
-      {/* Itinerary Section */}
+      {/* Tab Navigation */}
       <div className="mt-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 border-l-4 border-gray-500 pl-4">
-          Itinerary
-        </h2>
-        <ul className="list-decimal list-inside text-gray-700 space-y-4 text-lg md:text-xl">
-          {post.itinerary.map((item, index) => (
-            <li
-              key={index}
-              className="leading-relaxed bg-gray-50 p-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+        <div className="flex border-b border-gray-300">
+          <button
+            className={`text-xl px-4 py-2 focus:outline-none ${
+              activeTab === "itinerary"
+                ? "text-gray-900 font-bold border-b-2 border-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActiveTab("itinerary")}
+          >
+            Itinerary
+          </button>
+          <button
+            className={`text-xl px-4 py-2 focus:outline-none ${
+              activeTab === "costExcluded"
+                ? "text-gray-900 font-bold border-b-2 border-blue-500"
+                : "text-gray-500"
+            }`}
+            onClick={() => setActiveTab("costExcluded")}
+          >
+            Cost Excluded
+          </button>
+        </div>
 
-      {/* Cost Excluded Section */}
-      <div className="mt-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 border-l-4 border-gray-500 pl-4">
-          Cost Excluded
-        </h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-4 text-lg md:text-xl">
-          {post.costExcluded.map((item, index) => (
-            <li
-              key={index}
-              className="leading-relaxed bg-gray-50 p-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
+        {/* Tab Content */}
+        <div className="mt-6">
+          {activeTab === "itinerary" && (
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Itinerary
+              </h2>
+              <ul className="list-decimal list-inside text-gray-700 space-y-4 text-lg md:text-xl">
+                {post.itinerary.map((item, index) => (
+                  <li
+                    key={index}
+                    className="leading-relaxed bg-gray-50 p-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {activeTab === "costExcluded" && (
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Cost Excluded
+              </h2>
+              <ul className="list-disc list-inside text-gray-700 space-y-4 text-lg md:text-xl">
+                {post.costExcluded.map((item, index) => (
+                  <li
+                    key={index}
+                    className="leading-relaxed bg-gray-50 p-4 rounded-lg shadow-md hover:bg-gray-100 transition-colors"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
