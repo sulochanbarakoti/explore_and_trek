@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 const TravelStories = () => {
   return (
     <div className="space-y-2 mx-10">
-      <div className=" flex flex-row justify-between">
-        <div className="text-3xl font-bold">Best Trekking Deals</div>
-        <button className="border-2 px-2 md:px-6 rounded-md border-primary hover:bg-primary hover:text-white hidden md:block">
-          More...
-        </button>
+      <div className="mx-auto  lg:mx-0 flex flex-row justify-between items-center">
+        <div>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Best Trekking Deals
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            Learn how to explore Nepal with our expert advice.
+          </p>
+        </div>
+        <div>
+          <button className="border-2 px-2 md:px-6 rounded-md border-primary hover:bg-primary hover:text-white hidden md:block">
+            More...
+          </button>
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between space-y-5 md:space-y-0">
         {Trip.map((item, index) => (

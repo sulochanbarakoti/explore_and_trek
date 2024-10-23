@@ -8,10 +8,10 @@ import Destination from "./pages/destination";
 import Activities from "./pages/activities";
 import PostDetails from "./pages/postDetails";
 import Footer from "./components/footer";
-import ErrorPage from "./error-page";
+// import ErrorPage from "./error-page";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Root />, errorElement: <ErrorPage /> },
+  { path: "/", element: <Root /> },
   { path: "/destination", element: <Destination /> },
   { path: "/activities", element: <Activities /> },
   { path: "/post/:id", element: <PostDetails /> },
