@@ -80,7 +80,7 @@ const Chatbot = () => {
           disabled={loading}
           className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 disabled:bg-gray-400"
         >
-          Send
+          {loading ? "..." : "Send"}
         </button>
       </div>
     </div>
