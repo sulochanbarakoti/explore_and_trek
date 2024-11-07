@@ -5,8 +5,8 @@ import images from "../assets/images";
 
 const Contact = () => {
   return (
-    <div className="m-5 container mx-auto">
-      <div className="border border-2 rounded-lg flex flex-col md:flex-row">
+    <div className="m-5 h-[80vh] container flex items-center mx-auto">
+      <div className="border-2 rounded-lg flex flex-col items-center md:flex-row">
         <div className="p-4 md:w-1/2">
           <div className="text-3xl font-bold">Travel with Us!</div>
           <div className="mt-2">
@@ -40,8 +40,8 @@ const Contact = () => {
               className="w-full p-2 border rounded"
             />
             <button
-              type="submit"
               className="bg-green-500 text-white p-2 rounded"
+              onClick={() => alert("Thank you! We will contact you soon.")}
             >
               Submit
             </button>
