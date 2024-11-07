@@ -40,7 +40,9 @@ const Navbar = () => {
                 </button>
               </div>
               <div className=" text-white font-semibold flex flex-row items-center space-x-2 hover:text-green-500">
-                <button>Contacts</button>
+                <button>
+                  <a href="/contact">Contact</a>
+                </button>
               </div>
             </div>
           </div>
@@ -74,7 +76,9 @@ const Navbar = () => {
               </button>
             </div>
             <div className=" text-white font-bold flex flex-row items-center space-x-2">
-              <button>Contacts</button>
+              <button>
+                <a href="/contact">Contact</a>
+              </button>
             </div>
           </div>
         </div>
