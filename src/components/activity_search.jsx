@@ -3,7 +3,7 @@ import { useState } from "react";
 const ActivitySearch = () => {
   const [dropDownValue, setDropDownValue] = useState("default");
   return (
-    <div className="bg-green-100 w-[80%] rounded-lg grid grid-cols-1 gap-2 md:grid-cols-3 space-y-2 md:space-y-0 p-2">
+    <div className="bg-green-100 w-[90%] rounded-lg grid grid-cols-1 gap-2 md:grid-cols-3 space-y-2 md:space-y-0 p-5">
       <div className="w-full">
         <input
           type="text"

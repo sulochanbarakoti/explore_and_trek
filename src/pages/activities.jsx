@@ -6,42 +6,42 @@ const Activities = () => {
       title: "Everest Base Camp Trek",
       description:
         "A thrilling trek to the base of the world's highest peak. Experience breathtaking views and rich Sherpa culture.",
-      image: images.everestBaseCamp,
+      image: images.everest,
       blogLink: "/blog/everest-base-camp-trek",
     },
     {
       title: "Annapurna Circuit",
       description:
         "Experience diverse landscapes and cultures on this classic trek. Discover lush valleys and majestic mountains.",
-      image: images.annapurnaCircuit,
+      image: images.ebc,
       blogLink: "/blog/annapurna-circuit",
     },
     {
       title: "Langtang Valley Trek",
       description:
         "Explore the beautiful Langtang Valley and its stunning mountains. A perfect blend of nature and adventure.",
-      image: images.langtangValley,
+      image: images.labuche,
       blogLink: "/blog/langtang-valley-trek",
     },
     {
       title: "Gosaikunda Trek",
       description:
         "A serene trek to the sacred lakes of Gosaikunda. Ideal for spiritual seekers and nature lovers.",
-      image: images.gosaikunda,
+      image: images.treking,
       blogLink: "/blog/gosaikunda-trek",
     },
     {
       title: "Paragliding in Pokhara",
       description:
         "Soar high above the stunning landscapes of Pokhara. Experience the thrill of flying with panoramic views.",
-      image: images.paragliding,
+      image: images.pokhara,
       blogLink: "/blog/paragliding-pokhara",
     },
     {
       title: "Rafting in Bhote Koshi",
       description:
         "Experience the adrenaline rush of rafting in the Bhote Koshi river. A perfect adventure for thrill-seekers.",
-      image: images.rafting,
+      image: images.helicopter,
       blogLink: "/blog/rafting-bhote-koshi",
     },
   ];
