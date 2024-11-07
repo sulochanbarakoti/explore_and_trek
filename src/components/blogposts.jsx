@@ -52,7 +52,7 @@ const BlogPosts = () => {
           {blogsData.map((items, index) => (
             <article
               key={index}
-              className="flex max-w-xl flex-col items-start justify-between"
+              className="flex max-w-xl flex-col items-start justify-between p-5 rounded-lg shadow-lg hover:shadow-xl hover:cursor-pointer"
             >
               <div className="mb-5">
                 <img src={items.thumbnail} alt="" className="rounded-lg" />
@@ -63,7 +63,7 @@ const BlogPosts = () => {
                 </time>
                 <a
                   href="#"
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                  className="relative z-10 rounded-md bg-gray-200 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
                 >
                   {items.category}
                 </a>

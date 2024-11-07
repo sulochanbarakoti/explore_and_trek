@@ -1,9 +1,12 @@
 import { ImLocation2 } from "react-icons/im";
 import { MdAccessTimeFilled } from "react-icons/md";
 import { Trip } from "../../data";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const TravelStories = () => {
+  const handleClick = (id) => {
+    console.log(id, "Button clicked");
+  };
   return (
     <div className="space-y-2 mx-10">
       <div className="mx-auto  lg:mx-0 flex flex-row justify-between items-center">
@@ -25,7 +28,8 @@ const TravelStories = () => {
         {Trip.map((item, index) => (
           <div
             key={index}
-            className="border rounded-md shadow-lg hover:shadow-xl"
+            className="border rounded-md shadow-lg hover:shadow-xl hover:cursor-pointer"
+            onClick={() => handleClick(item.tripId)}
           >
             <div className="w-full h-60 overflow-hidden">
               <img
@@ -40,7 +44,7 @@ const TravelStories = () => {
                 <div>{item.tripDetails.arrivalCity}</div>
               </div>
               <div className="font-bold">
-                <Link to={`/post/${item.tripId}`}>{item.tripName}</Link>
+                {/* <Link to={`/post/${item.tripId}`}>{item.tripName}</Link> */}
               </div>
               <div className="font-semibold text-gray-400 flex flex-row items-center space-x-2 mt-2">
                 <MdAccessTimeFilled />
